@@ -1,16 +1,17 @@
-import { useState } from 'react'
+/**
+ * @copyright 2025 Leon Creates
+ * @lincence Apache-2.0
+ */
 
 
+/** Components */
+import Header from "./components/Header";
 
-function App() {
- 
 
+const App = () => {
   return (
-    <>
-      <h1>Leon Njoroge</h1>
-      
-    </>
-  )
+    <Header></Header>
+)
 }
 
-export default App
+export default App;

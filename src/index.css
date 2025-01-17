@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* _______ BASE  ________ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply bg-zinc-900;
+}
