@@ -23,7 +23,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
               {status === 'sending' && <Alert>Downloading...</Alert>}
               {status === 'error' && <Alert variant="danger">{message}</Alert>}
               {status === 'success' && <Alert variant="success">{message}</Alert>}
-              <p>leonmuraguri@gmail.com / +254 705 805 1905</p>
+              
             </Col>
             <Col md={6} xl={7}>
             <div className="new-email-bx">

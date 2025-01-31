@@ -1,8 +1,14 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/masai.png";
+import projImg1 from "../assets/img/masaigame.png";
 import projImg2 from "../assets/img/netwas.png";
 import projImg3 from "../assets/img/evernai.png";
+import projImg4 from "../assets/img/inventovault.png";
+import projImg5 from "../assets/img/Lightblog.png";
+import projImg6 from "../assets/img/schManagement.png";
+import projImg7 from "../assets/img/healthC.png";
+import projImg8 from "../assets/img/airbnb.png";
+import projImg9 from "../assets/img/tic-tac.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -18,53 +24,53 @@ export const Projects = () => {
     },
     {
       title: "Netwas International",
-      description: "Company founded by WHO",
+      description: "React | Javascript | PostgreSQL",
       imgUrl: projImg2,
       url:"https://netwas-international.org"
     },
     {
       title: "EveraNai Properties",
-      description: "Design & Development",
+      description: "React | Javascript | PostgreSQL | Node",
       imgUrl: projImg3,
       url:"https://evernaiproperties.site"
     },
     {
       title: "Invento Vault",
       description: "React | TailwindCSS | PostgreSQL | Prisma",
-      imgUrl: projImg1,
+      imgUrl: projImg4,
+      url:"https://github.com/LeonNjoroge/Inventory_App"
     }
   ];
 
   const passion_projects = [
     {
-      title: "Node Blog",
-      description: "Javascript | NodeJS | ExpressJS",
-      imgUrl: projImg1,
+      title: "Light Blog",
+      description: "React | NodeJS | ExpressJS",
+      imgUrl: projImg5,
+      url:"https://github.com/LeonNjoroge/light-blog"
     },
     {
       title: "School Management App",
       description: "Python | Flask | Oracle DB",
-      imgUrl: projImg2,
+      imgUrl: projImg6,
+      url:"https://github.com/LeonNjoroge/school-management-app"
     },
     {
       title: "Tic Tac Toe App",
-      description: "React Native",
-      imgUrl: projImg2,
+      description: "React Native | ExpressJS",
+      imgUrl: projImg9,
+      url:"https://github.com/LeonNjoroge/TicTacToe"
     },
     {
       title: "Health app dashboard",
-      description: "Javascript | ChartJS",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Maze App",
-      description: "C",
-      imgUrl: projImg2,
+      description: "Javascript | ChartJS | CSS",
+      imgUrl: projImg7,
     },
     {
       title: "AirBNB Clone",
-      description: "React",
-      imgUrl: projImg2,
+      description: "React | Python | Flask | MongoDB",
+      imgUrl: projImg8,
+      url:"https://github.com/LeonNjoroge/AirBnB_clone"
     }
   ];
 
