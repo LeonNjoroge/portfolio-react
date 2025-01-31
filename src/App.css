@@ -636,6 +636,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .new-email-bx button:active {
   background: linear-gradient(90.21deg, #225dca -5.91%, #217a49 111.58%);
 }
+@media (max-width: 768px) {
+  .new-email-bx{
+    
+    margin-left: -110px;        /* Centers horizontally */
+          
+    
+  }
+  .new-email-bx button{
+    padding: 20px 60px;
+  }
+  .newsletter-bx h3 {
+    margin-left: -50px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1em;
+  }
+  
+}
 .footer img {
   width: 26%;
 }
