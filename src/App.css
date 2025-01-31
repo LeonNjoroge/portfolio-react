@@ -639,7 +639,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @media (max-width: 768px) {
   .new-email-bx{
     
-    margin-left: -110px;        /* Centers horizontally */
+    margin-left: -50px;        /* Centers horizontally */
           
     
   }
