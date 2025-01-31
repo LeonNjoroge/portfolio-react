@@ -2,24 +2,17 @@ import { useState, useEffect } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
 
 export const Newsletter = ({ status, message, onValidated }) => {
-  const [email, setEmail] = useState('');
+ 
 
-  useEffect(() => {
-    if (status === 'success') clearFields();
-  }, [status])
+  const handleDownload = () => {
+    const resumeUrl = "/Leon_Resume.pdf"; // Replace with the correct path to your file
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "LeonNjoroge_Resume.pdf"; // The name of the downloaded file
+    link.click();
+  };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    email &&
-    email.indexOf("@") > -1 &&
-    onValidated({
-      EMAIL: email
-    })
-  }
 
-  const clearFields = () => {
-    setEmail('');
-  }
 
   return (
       <Col lg={12}>
@@ -27,17 +20,22 @@ export const Newsletter = ({ status, message, onValidated }) => {
           <Row>
             <Col lg={12} md={6} xl={5}>
               <h3>Want to know more?<br></br> Download my Resume</h3>
-              {status === 'sending' && <Alert>Sending...</Alert>}
+              {status === 'sending' && <Alert>Downloading...</Alert>}
               {status === 'error' && <Alert variant="danger">{message}</Alert>}
               {status === 'success' && <Alert variant="success">{message}</Alert>}
+              <p>leonmuraguri@gmail.com / +254 705 805 1905</p>
             </Col>
             <Col md={6} xl={7}>
-              <form onSubmit={handleSubmit}>
-                <div className="new-email-bx">
-                  <input value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email Address" />
-                  <button type="submit">Submit</button>
-                </div>
-              </form>
+            <div className="new-email-bx">
+
+              <button
+                onClick={handleDownload}
+                
+              >
+              Download Resume
+            </button>
+            
+            </div>
             </Col>
           </Row>
         </div>
